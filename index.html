@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            GIFTASTIC
+        </title>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/logic.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="buttons"></div>
+            <div id="content">
+                <div id="gifs"></div>
+                <div id="form">
+                    <form id="add-animal" action="#">
+                        <input type="text" id="user-input" />
+                        <input type="submit" value="Add Animal Button" />
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .animal {
+                float: left;
+            }
+            .rating {
+                font-weight: bold;
+                font-size: 18pt;
+                text-align: center;
+            }
+            .addanimal {
+                background-color: lightslategray;
+                color: white;
+                border-radius: 3px;
+                font-weight: bold;
+                font-size: 24pt;
+            }
+            .addanimal:hover {
+                cursor: pointer;
+                opacity: .5;
+            }
+
+            html, body {
+                width: 100%;
+
+            }
+            #wrapper {
+                width: 100%;
+            }
+
+            #content {
+                overflow: auto;
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            #gifs {
+                float: left;
+                width: 70%;
+            }
+            #form {
+                float: left;
+                width: 25%;
+            }
+
+            .gif {
+                width: 200px;
+                height: auto;
+            }
+            .gif:hover {
+                cursor: pointer;                
+            }
+        </style>
+    </body>
+</html>
